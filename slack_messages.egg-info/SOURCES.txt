@@ -1,0 +1,6 @@
+setup.py
+slack_messages/__init__.py
+slack_messages.egg-info/PKG-INFO
+slack_messages.egg-info/SOURCES.txt
+slack_messages.egg-info/dependency_links.txt
+slack_messages.egg-info/top_level.txt

@@ -63,12 +63,12 @@ logger = logging.getLogger(__name__)
 class SlackExceptionHandler(logging.Handler):
     def __init__(self, **kwargs):
         logging.Handler.__init__(self)
+
     def emit(self, record):
-        # subject = f'DDW ANALYST UI {type(error).__name__}'
         subject = f'{record.levelname}: {record.getMessage()}'
         if record.exc_info:
             errType, errValue, errTraceback = record.exc_info
             message = "".join(traceback.format_exception(errType, errValue, errTraceback))
         else:
             message = ''
-        post_to_slack_channel(os.environ.get('SLACK_CHANNEL_ID'), message, subject)
+        post_to_slack_channel(os.environ.get('SLACK_CHANNEL', '#test-exceptions'), message, subject)

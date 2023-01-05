@@ -4,4 +4,5 @@ include
 lib
 .Python
 .env
+env/
 __pycache__

@@ -58,8 +58,6 @@ def post_to_slack_channel(channel_id, message, subject=None):
             else:
                 logger.warning("Error posting to slack: {} \n Debug info below \n{}".format(str(error), message))
 
-logger = logging.getLogger(__name__)
-
 class SlackExceptionHandler(logging.Handler):
     def __init__(self, **kwargs):
         logging.Handler.__init__(self)

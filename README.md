@@ -37,7 +37,7 @@ An internal package to use to send exceptions to slack
         },
         'loggers': {
             'django': {
-                'handlers': ['console', 'slack_admins'],
+                'handlers': [ 'slack_admins'],
                 'propagate': True,
             },
         },

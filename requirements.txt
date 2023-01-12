@@ -1,2 +1,1 @@
-jinja2
 slack_sdk>=3.13.0

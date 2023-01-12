@@ -2,6 +2,7 @@ import math
 import logging
 import os
 import traceback
+from jinja2 import Environment, FileSystemLoader
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
 
@@ -42,9 +43,12 @@ def post_to_slack_channel(channel_id, message, subject=None):
                         }
                     })
             full_message = subject + '\nn' + message
+            env = Environment(loader=FileSystemLoader('templates'))
+            template = env.get_template('error_message.jinja')
+            rendered_template = template.render(subject=subject, stack_trace=message)
             result = CLIENT.chat_postMessage(
                 channel=channel_id,
-                text=full_message,
+                text=rendered_template.content.decode(),
                 blocks=[
                     DIVIDER_BLOCK,
                     title_block,

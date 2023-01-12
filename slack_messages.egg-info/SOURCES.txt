@@ -1,3 +1,4 @@
+LICENSE
 README.md
 setup.py
 slack_messages/__init__.py

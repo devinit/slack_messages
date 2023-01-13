@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(name='slack_hero',
-      version='0.1',
+      version='0.2',
       description='A package that enables you to easily exception messages from django to slack',
       packages=find_packages(),
       python_requires=">=3.6",

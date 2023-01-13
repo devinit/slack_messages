@@ -1,4 +1,4 @@
-# slack_messages
+# slack_hero
 
 An internal package to use to send exceptions to slack
 
@@ -6,7 +6,7 @@ An internal package to use to send exceptions to slack
 
 1. Install the package in your application.
 
-        pip install git+https://github.com/devinit/slack_messages.git
+        pip install slack_hero
 
 2. Add the folowing environment variables to your environment
 
@@ -16,7 +16,7 @@ An internal package to use to send exceptions to slack
 
 3. Import the log module
 
-        import slack_messages.log
+        import slack_exception_messages.log
 
 3. Configure your logger to send exceptions to slack as below
 

@@ -16,7 +16,7 @@ An internal package to use to send exceptions to slack
 
 3. Import the log module
 
-        import slack_exception_messages.log
+        import slack_hero.log
 
 3. Configure your logger to send exceptions to slack as below
 
@@ -32,7 +32,7 @@ An internal package to use to send exceptions to slack
             'slack_admins': {
                 'level': 'ERROR',
                 'filters': ['require_debug_false'],
-                'class': 'slack_exception_messages.log.SlackExceptionHandler',
+                'class': 'slack_hero.log.SlackExceptionHandler',
             },
         },
         'loggers': {

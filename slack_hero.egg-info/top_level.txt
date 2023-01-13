@@ -1,1 +1,1 @@
-slack_exception_messages
+slack_hero

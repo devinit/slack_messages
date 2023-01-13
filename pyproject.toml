@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "slack_hero"
-version = "0.2"
+version = "0.2.1"
 description = "A package that enables you to easily send exception messages from django to slack"
 readme = "README.md"
 requires-python = ">=3.6"

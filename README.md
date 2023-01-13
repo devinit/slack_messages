@@ -32,7 +32,7 @@ An internal package to use to send exceptions to slack
             'slack_admins': {
                 'level': 'ERROR',
                 'filters': ['require_debug_false'],
-                'class': 'slack_messages.log.SlackExceptionHandler',
+                'class': 'slack_exception_messages.log.SlackExceptionHandler',
             },
         },
         'loggers': {

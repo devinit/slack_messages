@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0", "slack_sdk>=3.13.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "slack_hero"
+version = "0.2"
+description = "A package that enables you to easily send exception messages from django to slack"
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = [
+    "slack_sdk>=3.13.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/devinit/slack_messages"

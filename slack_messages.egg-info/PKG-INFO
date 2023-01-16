@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
-Name: slack-hero
-Version: 0.2.1
+Name: slack-messages
+Version: 0.1
 Home-page: https://github.com/devinit/slack_messages
 Requires-Python: >=3.6
 License-File: LICENSE

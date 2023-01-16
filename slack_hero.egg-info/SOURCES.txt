@@ -1,5 +1,6 @@
 LICENSE
 README.md
+pyproject.toml
 setup.py
 slack_hero/__init__.py
 slack_hero/log.py

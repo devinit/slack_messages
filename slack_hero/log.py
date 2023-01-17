@@ -15,7 +15,7 @@ def post_to_slack_channel(channel_id, message, subject=None):
     else:
         subject = ''
     title_block = {
-        "type": "header",
+        "type": "section",
         "text": {
             "type": "mrkdwn",
             "text": subject

@@ -42,6 +42,12 @@ def post_to_slack_channel(channel_id, message, subject=None):
                         }
                     })
             full_message = subject + '\nn' + message
+            print('one',full_message)
+            print([
+                    DIVIDER_BLOCK,
+                    title_block,
+                    *message_blocks,
+                ])
             result = CLIENT.chat_postMessage(
                 channel=channel_id,
                 text=full_message,
@@ -51,7 +57,6 @@ def post_to_slack_channel(channel_id, message, subject=None):
                     *message_blocks,
                 ]
             )
-            
             logger.warning("Result: {}".format(str(result)))
         except SlackApiError as error:
             if os.environ.get('DEBUG'):
